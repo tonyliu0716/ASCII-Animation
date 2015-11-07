@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASCIImation</title>
+        <meta charset="utf-8" />
+        <link href="ascii.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="animations.js"></script>
+        <script type="text/javascript" src="ascii.js"></script>
+    </head>
+    <body>
+        <div id="body">
+            <p>CS472: ASCII Animation Viewer</p>
+            <textarea id="textarea" cols="80" rows ="20" onchange="textChange()"></textarea>
+        </div>
+        <div id="field">
+            <fieldset>
+                <legend>Play Controls:</legend>
+                <button class="button" onclick="start()" id="startButton">Start</button>
+                <button class="button" onclick="stop()" id="stopButton">Stop</button>
+            </fieldset>
+            <fieldset>
+                <legend>Animation:</legend>
+                <select id="select" onchange="change()">
+                    <option  value="Blank">Blank</option>
+                    <option value="Exercise">Exercise</option>
+                    <option value="Juggler">Juggler</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Dive">Dive</option>
+                    <option value="Custom">Custom</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Size:</legend>
+                <select id="size" onchange="sizeChange()">
+                    <option value="12pt" selected="selected">Medium</option>
+                    <option value="7pt">Tiny</option>
+                    <option value="10pt">Small</option>
+                    <option value="16pt">Large</option>
+                    <option value="24pt">Extra Large</option>
+                    <option value="32pt">XXL</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Speed:</legend>
+                <input type="checkbox" onchange="clicked()" id="checkbox"/>Turbo
+            </fieldset>
+        </div>
+    </body>
+</html>
