@@ -1,0 +1,35 @@
+body{
+    background-color: #CCCCFF;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: "sans-serif";
+}
+
+p{
+    text-align: center;
+    font-size:32pt;
+    font-weight:bold;
+}
+
+#textarea{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:12pt;
+    width:90%;
+    height:400px;
+    font-weight: bold;
+}
+
+fieldset{
+    border:5px black solid;
+    display:inline;
+}
+
+#field{
+    text-align:center;
+}
+.button{
+    position:relative;
+    top:50%;
+}
